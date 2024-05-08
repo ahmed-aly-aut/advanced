@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "advanced"
+version = "0.1.0"
+description = "Advanced Python learning"
+authors = ["ahaly <ahmed.aly@compass.at>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+mypy = "*"
+pyright = "*"
+pylyzer = "*"
+requests = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+
+[tool.pyright]
+typeCheckingMode = "strict"
